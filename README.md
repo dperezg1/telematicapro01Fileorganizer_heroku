@@ -48,7 +48,7 @@ se genera la base del cliente con angular
  		size:String,
  		owner_username: String,
  		year: String,
- 		visibility:String,
+ 		visibility:"public"|"private",
  		shared_with: [{
  			username: String
  		}]
@@ -70,12 +70,12 @@ se genera la base del cliente con angular
 	  Body:
 	  {
 		var file = new File({
-      			title: string
-      			type: string,
-      			size: string,
-      			owner_username: string,
-      			year:req.body.year,
-      			visibility: string,
+      			title: val
+      			type: val,
+      			size: val,
+      			owner_username: val,
+      			year:val,
+      			visibility: "public"|"private",
       			shared_with: ({});
 	 }
 	*/
